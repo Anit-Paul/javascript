@@ -5,7 +5,7 @@ function SetUsername(username){
 }
 
 function createUser(username, email, password){
-    SetUsername.call(this, username)
+    SetUsername.call(this,username) //if we don't use call and don't pass this then for that function this will be global context
    
     this.email = email
     this.password = password
